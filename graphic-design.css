@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  background: white;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+.header nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.header nav a:hover {
+  color: rgb(0, 64, 255);
+}
+.programming-site {
+  background: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  border: 2px solid black;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.programming-site:hover {
+  background-color: yellow;
+  color: black;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #5a2d82, #ffcc00);
+  color: white;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.hero img {
+  width: 300px;
+  border-radius: 10px;
+  margin: 20px;
+}
+.hero-text {
+  max-width: 500px;
+  margin: 20px;
+  font-weight: bold;
+}
+.hero-text h1 {
+  font-size: 40px;
+}
+
+.email-button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.email-button:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+@media (min-width: 769px) {
+  .hero {
+    flex-direction: row;
+  }
+}
